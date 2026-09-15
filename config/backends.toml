@@ -1,0 +1,32 @@
+# This file is parsed first so that vega knows what to install.
+# All of these are little tools that make your Arch installation
+# More welcoming and less "why is my computer just white text ?"
+
+# A "backend" is just a fancy word for "who handles that ?" in this context.
+# for example, there are multiple backends for a taskbar, but all of them
+# make a taskbar in the end, just in different ways !
+
+TASKBAR="waybar"
+# it's the equivalent of the bar you can find in windows at the 
+# bottom of your screen ! It will have info such as your Wi-Fi,
+# the time of the day, RAM usage, little things that make your life
+# better :)
+
+NOTIFICATION_CENTER="swaync"
+# it's what will allow you to see little messages pop on your screen like messages
+# on your social media or "you just took a screenshot" ! there are many backends for that,
+# swaync is very simple and requires little setup, and it's to be handled by Vega !
+
+APPLICATION_LAUNCHER="wofi"
+# it's what will allow you to launch apps from elsewhere than your terminal.
+# It takes form of a window that pops up when you press some keys, then you type
+# what you want to launch.
+
+WINDOW_MANAGER="[aur]sway-scroll"
+# A window manager is the cornerstone of a visual computer on Linux. It's what
+# will allow you to actually see things on your screen instead of just black text !
+# it's called a window manager (WM in short) because it manages your windows by drawing them.
+# It goes : Software asks your window manager via a special protocol to draw something on the screen,
+# WM chooses a box of pixels on the screen, draws what the software wants to show you. It also handles
+# you clicking on the pixels, for example to close a tab on Firefox !
+

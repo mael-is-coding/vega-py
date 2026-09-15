@@ -1,0 +1,54 @@
+[GENERAL]
+background_image="/home/cosmos/Pictures/VEGA/red_sunset.png"
+
+[TASKBAR]
+bg_color=""
+text_color=""
+border_color=""
+
+# "modules" is just the name you give to the things that appear on your taskbar.
+
+# / ! \ : here, you just define their colors, not whether they appear on the bar or not.
+
+# > Even if this discrepency seems impractical, it's actually to make it more practical :
+# > If you want to hide a module, you don't have to comment its corresponding line or delete it,
+# > you just have to edit "displayed_modules", and its theme still exists, or revert to default 
+# > settiings by removing the theme line and leaving the module in "displayed_modules".
+modules_styles=[
+    {mod="wifi", bg_color="", text_color="", border_color=""},
+    {mod="time", bg_color="", text_color="", border_color=""},
+    {mod="temp", bg_color="", text_color="", border_color=""}
+]
+
+# here you define IF and WHERE your modules will appear.
+# / ! \ If a module name is neither on the left, right or center;
+# > It WON'T be displayed !
+[TASKBAR.left]
+displayed_modules=[
+    "workspaces"
+]
+
+[TASKBAR.center]
+displayed_modules=[
+    "window_name"
+]
+
+[TASKBAR.right]
+displayed_modules=[
+    "wifi",
+    "time",
+    "temp",
+    "memory",
+    "battery",
+    "clock"
+]
+
+[APPLICATION_LAUNCHER]
+bg_color=""
+text_color=""
+border_color=""
+
+[NOTIFICATION_CENTER]
+bg_color=""
+text_color=""
+border_color=""
